@@ -1,0 +1,27 @@
+#content{
+	padding: .9375em;
+	padding-bottom: 2em;
+    background-color: #f9f9f9;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+textarea{
+    width: 100%;
+    min-height: 16em;
+    padding: 1.25em;
+    background: #fff;
+    border: none;
+    font-size: 1em;
+    line-height: 1.5;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+p.btn{
+    margin-top: .95em;
+}
+input[type="submit"]{
+	width: 100%;
+	padding: .4em;
+}
+
+

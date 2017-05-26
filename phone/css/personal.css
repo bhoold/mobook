@@ -1,0 +1,122 @@
+#header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: none;
+    border: none;
+}
+#header .left a.btn:active{
+    background-color: rgba(0,0,0,.5);
+}
+#header .left i{
+    color: #fff;
+}
+.swipe{
+    height: 16em;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > figure{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/content/personal-photo-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#text{
+    height: 3.35em;
+    padding: 1.2em 0;
+    text-align: center;
+}
+#text h1{
+    margin-bottom: .1em;
+    font-size: 1.85em;
+    color: #333;
+}
+#text p{
+    font-size: .75em;
+    color: #999;
+}
+#text p:before,
+#text p:after{
+    content: "";
+    width: 2em;
+    padding-top: 0.3em;
+    border-top: 1px solid #c5c5c5;
+    display: inline-block;
+}
+#text p:before{
+    margin-right: .5em;
+}
+#text p:after{
+    margin-left: .5em;
+}
+#list{
+    border-top: 1px solid #dcdcdc;
+}
+#list a{
+    display: block;
+    height: 3.05em;
+    padding: 0 1em;
+    line-height: 3.05em;
+    border-bottom: 1px solid #dcdcdc;
+    color: #666;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+#list a.mybook:active{
+    background-color: rgba(238,238,238,1);
+}
+#list a.logout{
+    position: absolute;
+    bottom: 0;
+    border-bottom: none;
+}
+#list a.logout:active{
+    background-color: rgba(238,238,238,1);
+}
+#list a i.icon-base{
+    font-size: 1.3em;
+    padding: 0 .2em;
+}
+#list a i.badge{
+    float: right;
+    width: initial;
+    height: initial;
+    font-size: 1em;
+    line-height: 3em;
+    background: none;
+    color: #666;
+}
+#call{
+    position: fixed;
+    left: 50%;
+    bottom: 1em;
+    margin-left: -2.82em;
+    width: 4.5em;
+    height: 4.5em;
+    border: none;
+    background: url("../images/call.png") no-repeat;
+    background-size: cover;
+}
+#call:active{
+    background-image: url("../images/call-active.png"); 
+}
+
+
+
+
+
+

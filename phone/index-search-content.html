@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font-icon.css">
+    <link rel="stylesheet" href="css/index.css">
+<style>
+    #container .result{
+        padding: .9375em;
+    }
+</style>
+</head>
+<body class="um-vp" id="content">
+    <div id="container" class="up"></div>
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+<script src="js/define.js"></script>
+<script src="js/widget.js"></script>
+<script src="js/function.js"></script>
+<script src="js/index-content.js"></script>
+<script>
+appcan.ready(function() {
+    appcan.initBounce();
+
+    result("正在搜索...");
+    sendMsg(0, "index", "searchReady()");
+
+})
+
+function result(str){
+    var str = str || getSearchResult();
+    try{
+        var data = JSON.parse(str);
+        data ? update(data) : result("没有合适的搜索结果");
+    }catch(e){
+        $('#container').html("<div class=\"result\">"+str+"</div>");
+    }
+}
+
+function update(list){
+    var list = list,
+        $html = $($('.list')[0] || $('<div class="list" />')),
+        $info;
+    $html.empty();
+    if(list){
+        for(var index in list){
+            list[index].thumb = list[index].thumb ? list[index].thumb : "images/book-thumb.jpg";
+            $info = $('<a class="ub item" data-id="' + list[index].id + '">\
+                        <img class="thumb" src="' + list[index].thumb + '" />\
+                        <div class="ub-f1 text">\
+                    <p class="title ut-s">' + list[index].title + '</p>\
+                    <p class="star"></p>\
+                    <p class="summary">' + list[index].summary + '</p>\
+                    <p class="tip ut-s"></p>\
+                    <div class="action">\
+                        <button class="uc-a1 button give-back">还书</button>\
+                        <button class="uc-a1 button confirm">确认还书</button>\
+                        <button class="urging"><i class="icon-status alarm"></i></button>\
+                    </div>\
+                </div>\
+            </a>');
+            for(var i = 0; i < 5; i++){
+                if(i < list[index].level)
+                    $info.find('p.star').append('<i class="icon-base star"></i>');
+                else
+                    $info.find('p.star').append('<i class="icon-base star2"></i>');
+            }
+            if(list[index].lend_id){
+                var lend_name,
+                    userinfo = getUserinfo();
+                userinfo = JSON.parse(userinfo);
+                if(list[index].lend_id == userinfo.uid){
+                    lend_name = '你';
+                    $info.find('.action .give-back').addClass('current');
+                }else{
+                    lend_name = list[index].lend_name;
+                    $info.find('.action .urging').addClass('current');
+                }
+                $info.find('.tip').html( lend_name + '已借阅<em>' + list[index].lendtime + '</em>天');
+
+            }
+            $html.append($info);
+        }
+    }
+    $('.list')[0] || $('#container').html($html);
+}
+</script>
+</body>
+</html>

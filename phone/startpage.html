@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+<style>
+body{
+    background: url("images/startpage.jpg");
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<script src="js/appcan.js"></script>
+<script src="js/define.js"></script>
+<script src="js/widget.js"></script>
+<script src="js/function.js"></script>
+<script>
+function initData(url){
+    var success = function(data){
+            if(data.status){
+                setAppConfig(data.list.config);
+                setBookcate(data.list.cate);
+                for(var index in data.list.book){
+                    setBooklist(index, data.list.book[index]);
+                }
+            }
+        },
+        error = function(err){},
+        beforeAjax = function(){},
+        afterAjax = function(){};
+    var data = _sysinfo;
+
+    if(_userinfo){
+        data.uid = _userinfo.uid;
+    }
+
+    //console.log($.param(data))
+    ajax({
+        url: SERVER.api.startpage,
+        type: 'post',
+        data: data,
+        beforeSend: beforeAjax,
+        complete: afterAjax,
+        success: success,
+        error: error,
+        async: false
+    });
+}
+
+
+function JPush(){
+    if(window.uexJPush == undefined){
+        //console.log('没有推送环境,请联系开发者')
+        return;
+    }else{
+        uexJPush.getConnectionState();
+    }
+
+    uexJPush.cbGetConnectionState=function(data){
+        var json = JSON.parse(data);
+        if(json.result == 0){
+            initJPush();
+        }
+    }
+    uexJPush.onReceiveConnectionChange = function(data){
+        var json = JSON.parse(data);
+        if(json.connect == 0){
+            initJPush();
+        }
+    }
+
+    uexJPush.cbGetRegistrationID=function(data){
+        var json = JSON.parse(data);
+        if(json.registrationID && (_jPush.registrationID != json.registrationID)){
+            _jPush.registrationID = json.registrationID;
+        }
+    }
+    uexJPush.cbSetAliasAndTags=function(data){
+        var json = JSON.parse(data);
+        if(json.result == 0){
+
+        }
+    }
+
+    uexJPush.onReceiveNotification=function(data){//通知callback
+            //alert('通知' + data);
+    }
+    uexJPush.onReceiveMessage=function(data){//自定义消息callback
+        callLocalNotify(JSON.parse(data));
+    }
+    uexJPush.onReceiveNotificationOpen=function(data){//用户点击callback
+            //alert('你点击了消息' + data);
+    }
+
+
+    function callLocalNotify(data){
+        var params;
+        _jPush.notificationId += 1;
+        params = {
+            builderId: 0,
+            title: data.title,
+            content: data.message,
+            extras: data.extras,
+            notificationId: _jPush.notificationId,
+            broadCastTime: 0 //延迟
+        };
+        uexJPush.addLocalNotification(JSON.stringify(params));
+    }
+}
+function initJPush(){
+    //uexJPush.getRegistrationID();
+    //uexJPush.resumePush();
+    uexJPush.setAliasAndTags(JSON.stringify({alias: _jPush.alias, tags: _jPush.tag}));
+}
+
+
+
+
+function init(){
+    _userinfo = getUserinfo();
+    try{_userinfo = JSON.parse(_userinfo);}catch(e){}
+    if(_userinfo && typeof _userinfo === "object"){}else{_userinfo = null}
+
+    _sysinfo = getSysinfo();
+
+    _jPush = {
+        'notificationId' : 0,
+        'registrationID' : 0,
+        'alias' : _userinfo ? _userinfo.realname : 0,
+        'tag' :  [_userinfo ? _userinfo.realname : 0]
+    }
+}
+
+function init2(){
+    init()
+    initJPush();
+}
+
+
+
+
+
+appcan.ready(function() {
+    init();
+    initData();
+    JPush();
+    gotoPage(getUserinfo() ? 'index' : 'login', 5);
+})
+
+</script>
+</body>
+</html>

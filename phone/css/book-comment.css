@@ -1,0 +1,21 @@
+*{box-sizing:border-box;-webkit-box-sizing:border-box;}
+.umar-r2{ margin-right:0.625em}
+.umar-b1{ margin-bottom:2.8125em;}
+.uinn0{padding:1.25em;}
+.ulev-2-1{font-size:1.125em;}
+.comment{padding-top:1.25em;padding-bottom:1.25em;}
+.comment textarea{border:none;width:100%;min-height:16em;background:#fff; position:relative;line-height:1.5}
+.flowers{background:url(../images/flowers_bg.png) repeat-x bottom;min-height:0.1875em;margin-top:-0.3125em;}
+.comment-btn{background:#007aff;color:#fff;border:none;width:100%;display:block;height:2.5em}
+/*弹框*/
+.send-comment{ position:relative;padding:5.5em 2.1875em 0;display:none}
+.popup_con{ position:relative;min-height:14em;background:#fff;padding:5em 2em;}
+.popup_sign{width:6.25em;height:6.25em;display:block;background:#3f99f2;border-radius:50%; position:absolute;left:50%;top:-3em;margin-left:-3.1em;}
+.popup_sign span{font-size:3.125em;color:#fff;display:block;margin:0 auto}
+.popup_con .flowers{display:block; position:absolute;bottom:-0.1875em;left:0;width:100%;}
+.flowers{ background:url(../images/flowers_bg.png) repeat-x;min-height:0.1875em; background-size:0.625em;overflow:hidden}
+.popup_con p{line-height:1.5}
+.confirm-btn{background:#3f99f2;color:#fff;border:none;width:6.25em;display:block;height:2em; margin:0 auto}
+.btn-box{margin:0 auto;height:4em}
+.btn-box a{height:4em;background:#3f99f2;color:#fff;padding:0.5em 2em;display:block; text-decoration:none}
+.btn-box a span{display:block;font-size:1.75em;color:#fff}

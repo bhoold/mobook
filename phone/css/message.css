@@ -1,0 +1,61 @@
+#content .item{
+    border-bottom: 1px #dbdbdb solid;
+    cursor: pointer;
+}
+#content .thumb{
+    margin: .9375em;
+    width: 4.1em;
+    height: 4.1em;
+    border-radius: 50%;
+    line-height: 4.1em;
+    text-align: center;
+    color: #fff;
+}
+#content .thumb:before{
+    font-size: 2.2em;
+}
+#content .thumb.clock{
+    background: #ee5655;
+}
+#content .thumb.message{
+    background: #5facf5;
+}
+#content .thumb.hand{
+    background: #fab33b;
+}
+#content .thumb.take{
+    line-height: 3.2em;
+    text-align: left;
+    text-indent: .7em;
+    background: #64cd76;
+}
+#content .summary{
+    padding: .9375em 0;
+}
+#content .title{
+    margin: .7em 0 .2em;
+    color: #333;
+    font-size: 1.0625em;
+    font-weight: 700;
+}
+#content .tip{
+    color: #666;
+    font-size: 0.875em;
+}
+#content .extras{
+    display: inline-block;
+    margin: .9375em;
+}
+#content .extras span,
+#content .extras i{
+    display: block;
+    font-style: normal;
+}
+#content .extras .date{
+    margin-top: 1.3em;
+    margin-bottom: .6em;
+    font-size: 0.7em;
+}
+
+
+

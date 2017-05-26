@@ -1,0 +1,46 @@
+#logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4.1em;
+    margin-top: -5em;
+    width: 8.2em;
+    height: 10.05em;
+}
+#form{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    color: #999;
+}
+#form .account,
+#form .pwd{
+    position: relative;
+    margin-bottom: 1em;
+}
+#form .account i,
+#form .pwd i{
+    position: absolute;
+    bottom: .2em;
+    font-size: 1.5em;
+}
+#form .account input,
+#form .pwd input{
+    width: 100%;
+    padding: .4em;
+    padding-left: 2em;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    font-size: 1em;
+    color: #999;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#form .btn{
+    margin-top: 2em;
+}
+#form .btn input{
+    width: 100%;
+    padding: .4em;
+}
+

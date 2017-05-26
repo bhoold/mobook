@@ -1,0 +1,35 @@
+.list{
+	padding-top: .9375em;
+	overflow: hidden;
+}
+.item{
+	float: left;
+	margin-bottom: .5em;
+	width: 33.33333%;
+	padding: .5em .9375em;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+.item:active{
+    background-color: rgba(238,238,238,1);
+}
+.item .img{
+	margin: auto;
+	width: 5em;
+	height: 7.5em;
+	line-height: 7.5em;
+}
+.item img{
+	width: 100%;
+}
+.item .title{
+	margin-top: 1em;
+	margin-bottom: .2em;
+	font-size: 0.8125em;
+}
+.item .star{
+	font-size: .85em;
+}

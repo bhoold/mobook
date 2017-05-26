@@ -1,0 +1,87 @@
+#content{
+    padding: .9375em;
+    padding-bottom: 2em;
+}
+#content form{
+}
+#content .bookInfo{
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+#content .thumb{
+    float: left;
+    width: 5em;
+    max-height: 6.6em;
+    margin-right: 1em;
+}
+#content .title{
+    float: left;
+    margin-top: .5em;
+}
+#content .loading{
+    width: 2em;
+}
+#content .form{
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #fff;
+}
+#content .item{
+    padding: 1.6875em 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+#content .item.summary{
+    padding-top: 0;
+}
+#content .item.last{
+    border: none;
+}
+#content .form label{
+    margin-right: 2em;
+    font-size: 1.0625em;
+    font-weight: 700;
+}
+#content .form .values{
+    margin-top: 1em;
+    padding: .4em 0;
+    overflow: hidden;
+}
+#content .form a.btn{
+    margin-right: 0.5em;
+    margin-bottom: .5em;
+    padding: 0.5em;
+    border: 1px #ccc solid;
+    border-radius: 0.4em;
+    font-size: .8em;
+    color: #666;
+    display: block;
+    float: left;
+}
+#content .form a.btn.selected{
+    background: #3f99f2;
+    border-color: #3f99f2;
+    color: #fff;
+}
+#content .form i.star{
+    font-size: 1.2em;
+}
+#content .form textarea{
+    width: 100%;
+    min-height: 7em;
+    border: none;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#content .form .ornament{
+    position: absolute;
+    left: 0;
+    bottom: -0.1875em;
+    width: 100%;
+    min-height: 0.1875em;
+    background: url("../images/flowers_bg.png") repeat-x;
+    background-size: 0.625em;
+}
+#content input.button{
+    width: 100%;
+    padding: .4em;
+}

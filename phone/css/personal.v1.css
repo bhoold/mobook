@@ -1,0 +1,86 @@
+#header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+#avatar{
+    height: 16em;
+    padding: 3em 0;
+    text-align: center;
+    background: url("../images/usercenter_head_bg.jpg") no-repeat center;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#avatar img{
+    width: 7.75em;
+    height: 7.75em;
+    border-radius: 50%;
+}
+#avatar span{
+    display: block;
+    margin-top: .5em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#book{
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#book p{
+    padding: 2em 0;
+}
+#book a{
+    display: block;
+    width: 5.5em;
+    height: 5.5em;
+    margin: auto;
+    padding-top: 1em;
+    background: #ff3b30;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#book a.lend{
+    background: #0078e9;
+}
+#book a.mybook{
+    background: #ff9500;
+}
+#book span{
+    display: block;
+}
+#book span.num{
+    font-size: 2em;
+}
+
+#other a{
+    display: block;
+    height: 3.8em;
+    padding: 0 1em;
+    line-height: 3.8em;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+#other a.logout{
+    position: absolute;
+    bottom: 0;
+    border-bottom: none;
+}
+#other a i{
+    font-size: 1.3em;
+    padding: 0 .2em;
+}
+
+
+
+
+
+
+
+
+

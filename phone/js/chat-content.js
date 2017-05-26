@@ -1,0 +1,6 @@
+﻿
+appcan.ready(function() {
+
+
+
+})

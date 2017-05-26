@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/appcan.control.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/scan-result.css">
+</head>
+<body class="um-vp">
+<div class="up ub ub-ver">
+<!--头部-->
+<div id="header" class="uh bc-text-head ub bc-head uinn-lr bc-head">
+  <div class="nav-btn" id="nav-left">
+    <div class="sc-text iconfont head-btn" id="back-btn"></div>
+  </div>
+  <h1 class="ut ub-f1 ulev1 tx-c ub ub-pc ub-ac umar-r3"><p class="ut-s ulev0">上传图书</p></h1>
+</div>
+<!--内容-->
+<div class="main_con uinn-all hide">
+<form action="http://120.24.48.190/bookapp/Api/Book/upload" method="post">
+
+    <input type="hidden" name="title" class="title" />
+    <input type="hidden" name="thumb" class="thumb" />
+    <input type="hidden" name="isbn" class="isbn" />
+    <input type="hidden" name="level" class="level" />
+    <input type="hidden" name="cate_id" class="cate_id" />
+    <input type="hidden" name="deadline" class="deadline" />
+
+
+	<div class="ub book-info">
+        <div class="lis-icon img-bor umar-r">
+           <img src="images/book1.jpg">
+        </div>
+        <div class="ub-f1 ub ub-ver list-text uinn5 ulev-2-1 bc-text">小米口碑营销内部手册</div>
+    </div>
+
+    <div class="sc-bg uinn-all else-info">
+    	<div class="ubb bc-border">
+            <textarea placeholder="请写下您对此书的评价" name="summary" class="ulev0" id="commentbox"></textarea>
+        </div>
+        <div class="recommend ub uinn6 ubb bc-border ub-ac">
+        	<h3 class="ulev-3">推荐指数</h3>
+            <p class="ub-f1 umar-l2 recommend-star iconfont">
+                <a href="javascript:" class="favor"></a>
+                <a href="javascript:" class="favor"></a>
+                <a href="javascript:" class="favor"></a>
+                <a href="javascript:" class="favor"></a>
+                <a href="javascript:" class="favor"></a>
+            </p>
+        </div>
+        <div class="book-type uinn6 ubb bc-border ub-ac">
+        	<h3 class="ulev-3 umar-b1">图书类型</h3>
+            <p class="ub tx-c ulev-1-2">
+              <a href="javascrip:" data-id="1" class="ub-f1 uinn0 umar-r0 ulev0">用研/交互</a>
+              <a href="javascrip:" data-id="2" class="ub-f1 uinn0 umar-r0 ulev0">视觉</a>
+              <a href="javascrip:" data-id="3" class="ub-f1 uinn0 umar-r0 ulev0">前端</a>
+              <a href="javascrip:" data-id="4" class="ub-f1 uinn0 ulev0">其他</a>
+            </p>
+        </div>
+        <div class="recom-time uinn6 ub-ac">
+        	<h3 class="ulev-3 umar-b1">建议阅读时间</h3>
+            <p class="ub tx-c ulev-1-2">
+            	<a href="javascript:" class="ub-f1 uinn0 umar-r0 ulev0">20天</a>
+                <a href="javascript:" class="ub-f1 uinn0 umar-r0 ulev0">30天</a>
+                <a href="javascript:" class="ub-f1 uinn0 umar-r0 ulev0">40天</a>
+                <a href="javascript:" class="ub-f1 uinn0 umar-r0 ulev0">50天</a>
+                <a href="javascript:" class="ub-f1 uinn0 umar-r0 ulev0">60天</a>
+                <a href="javascript:" class="ub-f1 uinn0 ulev0">看到瞎</a>
+            </p>
+           
+        </div>
+    </div>
+    <!--花边-->
+	<div class="flowers umar-a0"></div>
+    <!--上传按钮-->
+    <div class="umar-a1 tx-c">
+    	<input type="submit" value="确认上传" class="upload-btn ulev-2-1 uc-a1 disabled" id="upload-btn">
+        <div class="loading-wait"><img src="images/loading.gif"></div>
+    </div>
+</form>
+</div>
+
+
+	<!--顶部提示红条-->
+   <div class="ub-pc ub-ac ub tips-bar false" id="fail-tips">
+   		<p class="icon_p ulev0"><span class="iconfont">&#xe616;</span><span class="icon-txt"></span></p>
+   </div>
+   <!--顶部提示红条-->
+   
+</div>
+    <script src="js/appcan.js"></script>
+    <script src="js/appcan.control.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/scan-result.js"></script>
+</body>
+</html>

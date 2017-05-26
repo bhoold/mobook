@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font-icon.css">
+    <link rel="stylesheet" href="css/upload-book.css">
+</head>
+<body class="um-vp">
+    <div id="container" class="up">
+    <div id="content">
+    <form id="form" method="post">
+        <div class="bookInfo">
+            <img class="thumb" src="images/book-thumb.jpg" />
+            <span class="title"></span>
+            <img class="loading uhide" src="images/talk_loading.gif" alt="" />
+            <p class="isbn uhide"></p>
+        </div>
+        <div class="form">
+            <div class="item summary"><textarea id="summary" name="summary" placeholder="点评一下"></textarea></div>
+            <div class="item">
+                <label>推荐指数</label>
+                <a data-name="level" class="star" data-value="1"><i class="icon-base star2"></i></a>
+                <a data-name="level" class="star" data-value="2"><i class="icon-base star2"></i></a>
+                <a data-name="level" class="star" data-value="3"><i class="icon-base star2"></i></a>
+                <a data-name="level" class="star" data-value="4"><i class="icon-base star2"></i></a>
+                <a data-name="level" class="star" data-value="5"><i class="icon-base star2"></i></a>
+            </div>
+            <div class="item">
+                <label>图书类型</label>
+                <div class="values">
+                    <a data-name="cate_id" class="btn" data-value="1">用研/交互</a>
+                    <a data-name="cate_id" class="btn" data-value="2">视觉</a>
+                    <a data-name="cate_id" class="btn" data-value="3">前端</a>
+                    <a data-name="cate_id" class="btn" data-value="4">其他</a>
+                </div>
+            </div>
+            <div class="item last">
+                <label>建议阅读时间</label>
+                <div class="values">
+                    <a data-name="deadline_id" class="btn" data-value="1">20天</a>
+                    <a data-name="deadline_id" class="btn" data-value="2">30天</a>
+                    <a data-name="deadline_id" class="btn" data-value="3">40天</a>
+                    <a data-name="deadline_id" class="btn" data-value="4">50天</a>
+                    <a data-name="deadline_id" class="btn" data-value="5">60天</a>
+                    <a data-name="deadline_id" class="btn" data-value="6">看到瞎</a>
+                </div>
+            </div>
+            <p class="ornament"></p>
+        </div>
+        <div style="display:none">
+            <input type="text" id="title" name="title" />
+            <input type="text" id="thumb" name="thumb" />
+            <input type="text" id="isbn" name="isbn" />
+            <!--
+            <input type="text" id="form-content" name="content" />
+        -->
+            <input type="text" id="level" name="level" />
+            <input type="text" id="cate_id" name="cate_id" />
+            <input type="text" id="deadline_id" name="deadline_id" />
+            <input type="text" id="owner_id" name="owner_id" />
+        </div>
+        <p class="btn"><input class="uc-a1 button" type="submit" value="上传" /></p>
+    </form>
+    </div></div>
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+
+<script src="js/define.js"></script>
+<script src="js/widget.js"></script>
+<script src="js/function.js"></script>
+<script src="js/upload-book-content.js"></script>
+
+</body>
+</html>

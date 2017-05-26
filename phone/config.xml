@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget appId="11465404" channelCode="0000" height="480" pid="" sreensize="4.5" version="00.00.0000" viewmode="application" widgetId="" width="320">
+	<config desc="uexJPush" type="KEY">
+		<param name="$UEXJPUSH_PACKAGE$" platform="Android" value="cn.deeping.bookapp"/>
+		<param name="$UEXJPUSH_APPKEY$" platform="Android" value="d4454a29da9f0734ae0ef7b9"/>
+		<param file="uexGroupfolder/PushConfig.plist" name="$UEXJPUSH_APP_KEY$" platform="iOS" value="d4454a29da9f0734ae0ef7b9"/>
+		<param file="uexGroupfolder/PushConfig.plist" name="$UEXJPUSH_PUSH_CHANNEL$" platform="iOS" value="bookapp"/>
+		<param file="uexGroupfolder/PushConfig.plist" name="$UEXJPUSH_APS_ENVIRONMENT$" platform="iOS" value="0"/>
+	</config>
+	<name>DEEP Book</name>
+	<description/>
+	<author email=""> </author>
+	<icon src="icon.png"/>
+	<license href=""/>
+	<content encoding="utf-8" src="startpage.html"/>
+	<updateurl/>
+	<logserverip>192.167.1.103</logserverip> 
+	<showmyspace>false</showmyspace>
+	<obfuscation>true</obfuscation>
+	<bgcolor>#fefefe</bgcolor>
+	<orientation>1</orientation>
+<debug>false</debug>
+<partobfuscation>false</partobfuscation>
+<webapp/>
+
+</widget>

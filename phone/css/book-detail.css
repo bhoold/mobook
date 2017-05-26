@@ -1,0 +1,214 @@
+#footer{
+	height: 3.6em;
+	text-align: center;
+    color: #666;
+}
+#footer p{
+	padding: .4em 0;
+}
+
+#footer p.text{
+	line-height: 3.6em;
+	padding: 0;
+}
+#footer p.tip{
+	padding: 0 .9375em;
+}
+#footer p.msg{
+    background: url(../images/nav_line.png) no-repeat right;
+    background-size: 0.1em;
+}
+#footer p.action.enabled{
+	color: #fff;
+    background: #007aff;
+}
+#footer p.action.disabled{
+    color: #d7d7d7;
+    background: #b3b3b3;
+}
+#footer i{
+	font-size: 1.8em;
+}
+#footer span{
+	display: block;
+	font-size: .8em;
+}
+
+#content .bookimg{
+	position: relative;
+	padding: 1.9em 0 1em;
+	text-align: center;
+}
+#content .bookimg .thumb{
+    width: 9em;
+}
+#content .bookimg .tip{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	color: #fff;
+}
+#content .bookimg .suggest{
+	background: rgba(0,122,255,0.6);
+}
+#content .bookimg .lent{
+    background-color: rgba(255,59,48,0.6);
+}
+#content .bookimg .tip i{
+	font-style: normal;
+}
+
+#content .info,
+#content .comment{
+	padding: 1em .9375em;
+	border-bottom: 1px solid #ededed;
+}
+#content .info{
+	background: #fff;
+}
+#content .info .title{
+	margin-bottom: .2em;
+	font-size: 1.2em;
+}
+#content .info .level{
+	float: left;
+	margin-right: .5em;
+	padding-right: .5em;
+	height: 1em;
+	line-height: 1em;
+	border-right: 1px solid #918f90;
+}
+#content .info .suggest{
+	float: left;
+	font-size: .75em;
+	color: #999;
+}
+#content .info .suggest i{
+	font-style: normal;
+}
+
+#content .owner{
+	padding: 1em .9375em;
+	background: #fff;
+}
+#content .owner p{
+	float: left;
+}
+#content .owner p.avatar-wrap{
+	margin: -.5em;
+	padding: .5em;
+	margin-right: 0;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+#content .owner p.avatar-wrap:active{
+	background-color: rgba(238,238,238,1);
+}
+#content .owner .avatar{
+	display: block;
+    border-radius: 50%;
+    width: 3.2em;
+}
+#content .owner i,
+#content .owner span{
+	display: block;
+	font-size: 1.125em;
+	font-style: normal;
+}
+#content .owner i{
+	margin-top: .5em;
+	margin-bottom: .2em;
+	font-size: .75em;
+}
+#call{
+	float: right;
+	margin-right: .1em;
+	width: 3.2em;
+	height: 3.2em;
+    border: none;
+    background: url("../images/call.png") no-repeat;
+    background-size: cover;
+}
+#call:active{
+	background-image: url("../images/call-active.png"); 
+}
+#content .comment{
+	padding: 0;
+}
+#content .summary{
+	padding: 1em .9375em;
+	background-color: #f9f9f9;
+}
+#content .summary .content{
+	margin-top: .3em;
+	line-height: 1.5;
+	font-size: 0.875em;
+	color: #666;
+}
+#content .other{
+	padding: 1em 0;
+	background-color: #f9f9f9;
+}
+#content .other .other-title{
+	padding: 0 .9375em;
+}
+#content .other li{
+	padding: 1em .9375em 0;
+}
+#content .other .avatar-wrap p{
+	margin: -.5em .2em .5em -.5em;
+	padding: .5em;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+#content .other .avatar-wrap p:active{
+	background-color: rgba(238,238,238,1);
+}
+#content .other .avatar{
+	display: block;
+    width: 3.2em;
+    border-radius: 50%;
+}
+#content .other .text{
+	border-bottom: 1px solid #dbdbdb;
+}
+#content .other .author{
+	font-weight: bold;
+	color: #000;
+}
+#content .other .content{
+	margin-top: .5em;
+	margin-bottom: 1.125em;
+	font-size: 0.875em;
+	color: #666;
+	line-height: 1.5em;
+}
+#content .other .time{
+	position: absolute;
+	top: .2em;
+	right: 0;
+	font-size: .75em;
+	color: #666;
+}
+
+#content .other .no-comment{
+	padding: 1em .9375em;
+	font-size: 0.875em;
+	color: #666;
+	text-align: center;
+}
+
+#content .other .no-comment img{
+	margin-right: .7em;
+	width: 2.55em;
+	vertical-align: middle;
+}
+
+
+
+
+
+

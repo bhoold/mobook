@@ -1,0 +1,90 @@
+@font-face {font-family: "icon base";
+  src: url('fonts/iconfont.ttf') format('truetype');
+}
+@font-face {font-family: "icon custom";
+  src: url('fonts/cui/custom.ttf') format('truetype');
+}
+@font-face {font-family: "icon status";
+  src:  url('fonts/status/iconfont.ttf') format('truetype');
+}
+.icon-base {
+    display: inline-block;
+    font: normal normal normal 1em/1 "icon base";
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-custom {
+    display: inline-block;
+    font: normal normal normal 1em/1 "icon custom";
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-status {
+    display: inline-block;
+    font: normal normal normal 1em/1 "icon status";
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-base.mobile:before{
+    content: "\e67f";
+}
+.icon-base.lock:before{
+    content: "\e649";
+}
+.icon-base.scan:before{
+    content: "\e62e";
+}
+.icon-base.search:before{
+    content: "\e610";
+}
+.icon-base.star:before{
+    content: "\e604";
+    color: #ff9500;
+}
+.icon-base.star2:before{
+    content: "\e605";
+    color: #aaa;
+}
+.icon-base.back:before{
+    content: "\e628";
+}
+.icon-base.msg:before{
+    content: "\e6a5";
+}
+.icon-base.account:before{
+    content: "\e62d";
+}
+.icon-base.comment:before{
+    content: "\e6c5";
+}
+.icon-base.message:before{
+    content: "\e6a5";
+}
+.icon-base.call:before{
+    content: "\e609";
+}
+.icon-base.success:before{
+    content: "\e6df";
+}
+
+.icon-status.alarm:before{
+    content: "\e604";
+}
+.icon-status.clock:before{
+    content: "\e600";
+}
+.icon-status.message:before{
+    content: "\e603";
+}
+.icon-status.hand:before{
+    content: "\e602";
+}
+.icon-status.take:before{
+    content: "\e601";
+}
