@@ -1,76 +1,76 @@
-µÇÂ¼			login.html		
-Ö÷Ò³&ËÑË÷Ò³		index.html		
-ÁÄÌì			talk.html		
-Í¼ÊéÏêÇé		book-detail.html	
-Ğ´ÊéÆÀ			comment.html		*
-É¨ÃèÍ¼Êé		scan-result.html	
-¸öÈËÖĞĞÄ		personal.html		
-»¹Êé			book-back.html		*
-ÏûÏ¢ÁĞ±í		message.html		
-¹é»¹ĞÅÏ¢		message-repay.html	
-ÆäËüÏûÏ¢		message-other.html	[Í¬¡®¹é»¹ĞÅÏ¢¡¯]
-ÎÒµÄÍ¼Êé		book.html		
+ç™»å½•			login.html		
+ä¸»é¡µ&æœç´¢é¡µ		index.html		
+èŠå¤©			talk.html		
+å›¾ä¹¦è¯¦æƒ…		book-detail.html	
+å†™ä¹¦è¯„			comment.html		*
+æ‰«æå›¾ä¹¦		scan-result.html	
+ä¸ªäººä¸­å¿ƒ		personal.html		
+è¿˜ä¹¦			book-back.html		*
+æ¶ˆæ¯åˆ—è¡¨		message.html		
+å½’è¿˜ä¿¡æ¯		message-repay.html	
+å…¶å®ƒæ¶ˆæ¯		message-other.html	[åŒâ€˜å½’è¿˜ä¿¡æ¯â€™]
+æˆ‘çš„å›¾ä¹¦		book.html		
 
 
 
-×¢Òâ£º
-appcanµÄ·½·¨ÔÚä¯ÀÀÆ÷ÖĞÎŞĞ§£»
-×Ô´øµÄjs¿â£ºzepto,Backbone,underscore
+æ³¨æ„ï¼š
+appcançš„æ–¹æ³•åœ¨æµè§ˆå™¨ä¸­æ— æ•ˆï¼›
+è‡ªå¸¦çš„jsåº“ï¼šzepto,Backbone,underscore
 
 
 
-ºóÌ¨jsonÊı¾İº¬Òå
-    status  1³É¹¦/0Ê§°Ü
-    msg ĞÅÏ¢
+åå°jsonæ•°æ®å«ä¹‰
+    status  1æˆåŠŸ/0å¤±è´¥
+    msg ä¿¡æ¯
 
 
-½Ó¿Ú£º
+æ¥å£ï¼š
 
-µÇÂ½Ò³		http://ip/bookapp/Api/Public/login           µÇÂ¼[post·½Ê½] pram:username(ÊÖ»úºÅ),password(ÃÜÂë)
+ç™»é™†é¡µ		http://ip/bookapp/Api/Public/login           ç™»å½•[postæ–¹å¼] pram:username(æ‰‹æœºå·),password(å¯†ç )
 
-Ê×Ò³		http://ip/bookapp/Api/Page/index         Í¼ÊéÁĞ±íºÍ·ÖÀàÁĞ±í
-		http://ip/bookapp/Api/Book/index         Í¼ÊéÁĞ±í
-		http://ip/bookapp/Api/Book/cate          ·ÖÀàÁĞ±í
-		http://ip/bookapp/Api/Book/index/cate/1      ·ÖÀà1µÄÍ¼ÊéÁĞ±í
-		http://ip/bookapp/Api/Book/index/page/2      µÚ¶şÒ³Í¼ÊéÁĞ±í
-		http://ip/bookapp/Api/Book/index/cate/1/page/2   ·ÖÀà1µÄµÚ¶şÒ³Í¼ÊéÁĞ±í
-		http://ip/bookapp/Api/Book/search/str/xxx        ËÑË÷¹Ø¼ü×Öxxx
-		http://ip/bookapp/Api/Book/search/str/xxx/page/2 ËÑË÷¹Ø¼ü×ÖxxxµÄµÚ¶şÒ³½á¹û
+é¦–é¡µ		http://ip/bookapp/Api/Page/index         å›¾ä¹¦åˆ—è¡¨å’Œåˆ†ç±»åˆ—è¡¨
+		http://ip/bookapp/Api/Book/index         å›¾ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Book/cate          åˆ†ç±»åˆ—è¡¨
+		http://ip/bookapp/Api/Book/index/cate/1      åˆ†ç±»1çš„å›¾ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Book/index/page/2      ç¬¬äºŒé¡µå›¾ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Book/index/cate/1/page/2   åˆ†ç±»1çš„ç¬¬äºŒé¡µå›¾ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Book/search/str/xxx        æœç´¢å…³é”®å­—xxx
+		http://ip/bookapp/Api/Book/search/str/xxx/page/2 æœç´¢å…³é”®å­—xxxçš„ç¬¬äºŒé¡µç»“æœ
 
-ÉÏ´«Í¼Êé	http://ip/bookapp/Api/Page/scanResult        ·ÖÀàÁĞ±íºÍÔÄ¶ÁÊ±¼äÁĞ±í
-		http://ip/bookapp/Api/Book/upload            ÉÏ´«Í¼Êé[post·½Ê½] pram:title(ÊéÃû),thumb(·âÃæurl),isbn,level(ÆÀĞÇ),cate_id(·ÖÀàid),deadline(ÔÄ¶ÁÊ±¼ä),summary(¼ò½é)
+ä¸Šä¼ å›¾ä¹¦	http://ip/bookapp/Api/Page/scanResult        åˆ†ç±»åˆ—è¡¨å’Œé˜…è¯»æ—¶é—´åˆ—è¡¨
+		http://ip/bookapp/Api/Book/upload            ä¸Šä¼ å›¾ä¹¦[postæ–¹å¼] pram:title(ä¹¦å),thumb(å°é¢url),isbn,level(è¯„æ˜Ÿ),cate_id(åˆ†ç±»id),deadline(é˜…è¯»æ—¶é—´),summary(ç®€ä»‹)
 
-¸öÈËÖĞĞÄ	http://ip/bookapp/Api/Page/personal/uid/1        ÓÃ»§1µÄÍ³¼ÆÊı¾İ
+ä¸ªäººä¸­å¿ƒ	http://ip/bookapp/Api/Page/personal/uid/1        ç”¨æˆ·1çš„ç»Ÿè®¡æ•°æ®
 
-ÎÒµÄÍ¼Êé	http://ip/bookapp/Api/Page/book/uid/1        ÓÃ»§1µÄÍ¼ÊéÁĞ±í
-		http://ip/bookapp/Api/Page/book/uid/1/page/2     µÚ¶şÒ³ÓÃ»§1µÄÍ¼ÊéÁĞ±í
+æˆ‘çš„å›¾ä¹¦	http://ip/bookapp/Api/Page/book/uid/1        ç”¨æˆ·1çš„å›¾ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Page/book/uid/1/page/2     ç¬¬äºŒé¡µç”¨æˆ·1çš„å›¾ä¹¦åˆ—è¡¨
 
-Í¼ÊéÏêÇé	http://ip/bookapp/Api/Page/bookDetail/bookID/1   Í¼Êé1µÄĞÅÏ¢ºÍÆÀÂÛÁĞ±í
+å›¾ä¹¦è¯¦æƒ…	http://ip/bookapp/Api/Page/bookDetail/bookID/1   å›¾ä¹¦1çš„ä¿¡æ¯å’Œè¯„è®ºåˆ—è¡¨
 
-»¹Êé		http://ip/bookapp/Api/Page/bookBack/uid/1        ÓÃ»§1µÄ»¹ÊéÁĞ±í
-		http://ip/bookapp/Api/Page/bookBack/uid/1/page/2 µÚ¶şÒ³ÓÃ»§1µÄ»¹ÊéÁĞ±í
+è¿˜ä¹¦		http://ip/bookapp/Api/Page/bookBack/uid/1        ç”¨æˆ·1çš„è¿˜ä¹¦åˆ—è¡¨
+		http://ip/bookapp/Api/Page/bookBack/uid/1/page/2 ç¬¬äºŒé¡µç”¨æˆ·1çš„è¿˜ä¹¦åˆ—è¡¨
 
-ÊéÆÀ		http://ip/bookapp/Api/Page/bookComment/uid/1/bookID/1 ÓÃ»§1¶ÔÊé1½øĞĞÆÀ¼Û[post·½Ê½] pram:context(ÆÀÂÛĞÅÏ¢),bookBack(1»¹ÊéÆÀÂÛ/0²»ÊÇ»¹ÊéÆÀÂÛ)
+ä¹¦è¯„		http://ip/bookapp/Api/Page/bookComment/uid/1/bookID/1 ç”¨æˆ·1å¯¹ä¹¦1è¿›è¡Œè¯„ä»·[postæ–¹å¼] pram:context(è¯„è®ºä¿¡æ¯),bookBack(1è¿˜ä¹¦è¯„è®º/0ä¸æ˜¯è¿˜ä¹¦è¯„è®º)
 
-½è³ö		http://ip/bookapp/Api/Page/bookLend/uid/1        ÓÃ»§1µÄ½è³öÁĞ±í
-		http://ip/bookapp/Api/Page/bookLend/uid/1/page/2 µÚ¶şÒ³ÓÃ»§1µÄ½è³öÁĞ±í
+å€Ÿå‡º		http://ip/bookapp/Api/Page/bookLend/uid/1        ç”¨æˆ·1çš„å€Ÿå‡ºåˆ—è¡¨
+		http://ip/bookapp/Api/Page/bookLend/uid/1/page/2 ç¬¬äºŒé¡µç”¨æˆ·1çš„å€Ÿå‡ºåˆ—è¡¨
         
-ÎÒµÄÏûÏ¢	http://ip/bookapp/Api/Page/message/uid/1     ÓÃ»§1µÄÏûÏ¢ÁĞ±í
+æˆ‘çš„æ¶ˆæ¯	http://ip/bookapp/Api/Page/message/uid/1     ç”¨æˆ·1çš„æ¶ˆæ¯åˆ—è¡¨
 
-´ß»¹ÏûÏ¢	http://ip/bookapp/Api/Page/message/cate/urge/uid/1
+å‚¬è¿˜æ¶ˆæ¯	http://ip/bookapp/Api/Page/message/cate/urge/uid/1
 		http://ip/bookapp/Api/Page/message/cate/urge/uid/1/page/2
 
-ÊéÆÀÏûÏ¢	http://ip/bookapp/Api/Page/message/cate/comment/uid/1
+ä¹¦è¯„æ¶ˆæ¯	http://ip/bookapp/Api/Page/message/cate/comment/uid/1
 		http://ip/bookapp/Api/Page/message/cate/comment/uid/1/page/2
 
-½èÊéÏûÏ¢	http://ip/bookapp/Api/Page/message/cate/lend/uid/1
+å€Ÿä¹¦æ¶ˆæ¯	http://ip/bookapp/Api/Page/message/cate/lend/uid/1
 		http://ip/bookapp/Api/Page/message/cate/lend/uid/1/page/2
 
-¹é»¹ÏûÏ¢	http://ip/bookapp/Api/Page/message/cate/return/uid/1
+å½’è¿˜æ¶ˆæ¯	http://ip/bookapp/Api/Page/message/cate/return/uid/1
 		http://ip/bookapp/Api/Page/message/cate/return/uid/1/page/2
 
-ÁÄÌì		http://ip/bookapp/Api/Page/talk/uid/1,2      ÓÃ»§1ºÍÓÃ»§2µÄÁÄÌìĞÅÏ¢
-		http://ip/bookapp/Api/Page/talk/uid/1,2/page/2   µÚ¶şÒ³ÁÄÌìĞÅÏ¢
+èŠå¤©		http://ip/bookapp/Api/Page/talk/uid/1,2      ç”¨æˆ·1å’Œç”¨æˆ·2çš„èŠå¤©ä¿¡æ¯
+		http://ip/bookapp/Api/Page/talk/uid/1,2/page/2   ç¬¬äºŒé¡µèŠå¤©ä¿¡æ¯
 
 
 
@@ -83,52 +83,52 @@ appcanµÄ·½·¨ÔÚä¯ÀÀÆ÷ÖĞÎŞĞ§£»
 
 
 
-´úÂëÆ¬¶Î£º
+ä»£ç ç‰‡æ®µï¼š
 
 
 
-Êı¾İ´æ´¢:
-appcan.locStorage.setVal('name', 'value');//±£´æÒ»¸öÊı¾İ
-appcan.locStorage.getVal('name');//»ñÈ¡Ò»¸öÊı¾İ
+æ•°æ®å­˜å‚¨:
+appcan.locStorage.setVal('name', 'value');//ä¿å­˜ä¸€ä¸ªæ•°æ®
+appcan.locStorage.getVal('name');//è·å–ä¸€ä¸ªæ•°æ®
 
 
 
-json²Ù×÷:
-JSON.parse(data);//°Ñ×Ö·û´®data×ª³É¶ÔÏó
-JSON.stringify(data);//°Ñ¶ÔÏódata×ª³É×Ö·û´®
+jsonæ“ä½œ:
+JSON.parse(data);//æŠŠå­—ç¬¦ä¸²dataè½¬æˆå¯¹è±¡
+JSON.stringify(data);//æŠŠå¯¹è±¡dataè½¬æˆå­—ç¬¦ä¸²
 
 
 
-ĞòÁĞ»¯±íµ¥:
+åºåˆ—åŒ–è¡¨å•:
 $('form').serialize();
 
 
 
-·µ»ØÉÏÒ³:
-ËùÓĞ·µ»ØÉÏÒ³´úÂëÍ³Ò»ÉèÎª
+è¿”å›ä¸Šé¡µ:
+æ‰€æœ‰è¿”å›ä¸Šé¡µä»£ç ç»Ÿä¸€è®¾ä¸º
 $("#back-btn").click(function(){
     location.href = appcan.locStorage.getVal('pageReferer');
 })
-ÔÚÌø×ªÒ³ÃæÊ±ÉèÖÃ
+åœ¨è·³è½¬é¡µé¢æ—¶è®¾ç½®
 $(document).on('click', 'li', function(){
-    appcan.locStorage.setVal('pageReferer', 'µ±Ç°Ò³ÎÄ¼şÃû');
-    location.href = 'ÒªÌø×ªµÄÎÄ¼şÃû';
+    appcan.locStorage.setVal('pageReferer', 'å½“å‰é¡µæ–‡ä»¶å');
+    location.href = 'è¦è·³è½¬çš„æ–‡ä»¶å';
 })
 
 
 
-»ñÈ¡ÓÃ»§ĞÅÏ¢:
+è·å–ç”¨æˆ·ä¿¡æ¯:
 userInfo = appcan.locStorage.getVal('userInfo');
-if(userInfo){//ÓÉÓÚÃ¿¸öÒ³Ãæ¶¼ĞèÒªÓÃµ½ÓÃ»§ĞÅÏ¢£¬Õâ¸öÅĞ¶Ï¾¡Á¿·ÅÔÚjsµÚÒ»ĞĞ¡£
+if(userInfo){//ç”±äºæ¯ä¸ªé¡µé¢éƒ½éœ€è¦ç”¨åˆ°ç”¨æˆ·ä¿¡æ¯ï¼Œè¿™ä¸ªåˆ¤æ–­å°½é‡æ”¾åœ¨jsç¬¬ä¸€è¡Œã€‚
     userInfo = JSON.parse(userInfo);
 }else{
-    appcan.locStorage.setVal('pageReferer', 'µ±Ç°Ò³ÎÄ¼şÃû');
+    appcan.locStorage.setVal('pageReferer', 'å½“å‰é¡µæ–‡ä»¶å');
     location.href = 'index.html';
 }
 
 
 
-ajaxÇëÇó:
+ajaxè¯·æ±‚:
 $.ajax({
     beforeSend : function(){},
     url : url,
@@ -143,34 +143,34 @@ $.ajax({
         }
     },
     error : function(){
-        console.log("ÎŞ·¨Á¬½Ó·şÎñÆ÷");         
+        console.log("æ— æ³•è¿æ¥æœåŠ¡å™¨");         
     },
     complete : function(){}
 })
 
 
 
-´íÎóÌáÊ¾(¶¥²¿ºìÌõ):
- <!--¶¥²¿ÌáÊ¾ºìÌõ-->
+é”™è¯¯æç¤º(é¡¶éƒ¨çº¢æ¡):
+ <!--é¡¶éƒ¨æç¤ºçº¢æ¡-->
 <div class="ub-pc ub-ac ub tips-bar false" id="fail-tips">
-    <p class="icon_p ulev0"><span class="iconfont">&#xe616;</span><span class="icon-txt">ÕâÀïÊäÈëÌáÊ¾ÎÄ×Ö</span></p>
+    <p class="icon_p ulev0"><span class="iconfont">&#xe616;</span><span class="icon-txt">è¿™é‡Œè¾“å…¥æç¤ºæ–‡å­—</span></p>
 </div>
- <!--¶¥²¿ÌáÊ¾ºìÌõ-->
+ <!--é¡¶éƒ¨æç¤ºçº¢æ¡-->
 
 
-³É¹¦ÌáÊ¾(¶¥²¿À¶Ìõ):
-<!--¶¥²¿ÌáÊ¾À¶Ìõ-->
+æˆåŠŸæç¤º(é¡¶éƒ¨è“æ¡):
+<!--é¡¶éƒ¨æç¤ºè“æ¡-->
    <div class="ub-pc ub-ac ub tips-bar true" id="comment-win">
-        <p class="icon_p ulev0"><span class="iconfont">&#xe60b;</span><span class="icon-txt">ÆÀÂÛ³É¹¦</span></p>
+        <p class="icon_p ulev0"><span class="iconfont">&#xe60b;</span><span class="icon-txt">è¯„è®ºæˆåŠŸ</span></p>
    </div>
-<!--¶¥²¿ÌáÊ¾À¶Ìõ-->
+<!--é¡¶éƒ¨æç¤ºè“æ¡-->
 
 
 ajax loading:
 
 
 
-Ò³ÃæÃ»Êı¾İÊ±:
+é¡µé¢æ²¡æ•°æ®æ—¶:
 
 
 
