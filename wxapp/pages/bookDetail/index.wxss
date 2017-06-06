@@ -1,0 +1,70 @@
+/**index.wxss**/
+.page{
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+}
+.header {
+display:flex;
+align-items:center;
+background:#fff;
+padding-bottom:15rpx;
+
+}
+
+.header .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+}
+
+.header .search {
+	flex: 1;
+	border: 1px solid #ddd;
+	border-radius: 15rpx;
+}
+.header .search .view-input{
+	float:left;
+	width:calc(100% - 70rpx);
+}
+.header .search .view-input input{
+	padding:10rpx 15rpx;
+}
+.header .search .iconfont{
+	float:right;
+	padding:5rpx 0;
+}
+.header .icon-scan {
+  margin: auto 20rpx;
+  font-size: 70rpx;
+  color: #bbb;
+}
+.cate{
+
+}
+.cate button{
+	float: left;
+}
+.list{
+	flex: 1;
+	overflow: auto;
+}
+.list .item{
+	display: flex;
+  align-items: center;
+}
+.list .cover{
+  margin: 20rpx 40rpx 20rpx 20rpx;
+	width:150rpx;
+	height:150rpx;
+	background-size: cover;
+}
+.list .describe{
+	flex: 1;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.list .operation{
+  margin: 20rpx;
+}

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+
+<view id="header">
+	<view class="left"></view>
+	<view class="middle"></view>
+	<view class="right"></view>
+</view>
+<view id="profile"></view>
+<view id="avatar"></view>
+<view id="list"></view>

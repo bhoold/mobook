@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+<view id="header">
+	<view class="left"><image class="avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="showPagePersonal" /></view>
+	<view class="center">
+		<view class="search">
+			<view class="input-outer"><input confirm-type="search" placeholder="搜索" bindfocus="showResult" /></view>
+			<span class="iconfont icon-search" />
+		</view>
+	</view>
+	<view class="right"><span class="iconfont icon-scan" bindtap="showScaner" /></view>
+</view>
+<scroll-view scroll-x="true" class="cate">
+<view class="wrap">
+	<span data-itemId="0" bindtap="getBookList">全部</span>
+	<span wx:for="{{cates}}" wx:key="{{index}}" data-itemId="{{item.id}}" bindtap="getBookList">{{item.title}}</span>
+</view>
+</scroll-view>
+<scroll-view scroll-y="true" class="list">
+	<view class="item" wx:for="{{books}}" wx:key="{{index}}" data-itemId="{{item.id}}" bindtap="showBookDetail">
+		<view class="cover" style="background-image: url('{{item.thumb}}')"></view>
+		<view class="describe"><text> {{item.title}} </text></view>
+		<view class="operation"><text>-</text></view>
+	</view>
+</scroll-view>

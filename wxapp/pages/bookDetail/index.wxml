@@ -1,0 +1,23 @@
+<!--index.wxml-->
+
+<view class="header">
+	<image bindtap="goto" class="avatar" src="{{userInfo.avatarUrl}}" background-size="cover" />
+	<view class="search">
+		<view class="view-input"><input placeholder="搜索" /></view>
+		<span class="iconfont icon-search" />
+	</view>
+	<span class="iconfont icon-scan" />
+</view>
+<view class="cate">
+	<button>全部</button>
+	<button>设计</button>
+	<button>前端</button>
+	
+</view>
+<scroll-view scroll-y="true" class="list">
+	<view class="item" wx:for="{{list}}">
+		<view class="cover" style="background-image: url('{{item.thumb}}')"></view>
+		<view class="describe"><text> {{item.title}} </text></view>
+		<view class="operation"><text>(可借)</text></view>
+	</view>
+</scroll-view>
